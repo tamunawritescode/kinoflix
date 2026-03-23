@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="main">
+    <div class="navbar">
+        <div class="menu">
+            <div class="logo" onclick="window.location.href='index.html'">KINO<div class="logo-w">FLIX</div></div>
+            <ul class="navbar-items">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="movies.html">MOVIES</a></li>
+                <li><a href="tvshows.html">TV SHOWS</a></li>
+                <li><a href="cartoons.html">CARTOON</a></li>
+                <li><a href="anime.html">ANIME</a></li>
+            </ul>
+<div class="search-wrapper" id="searchWrapper">
+    <button class="search-icon-btn" id="searchToggle" aria-label="Search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+    </button>
+    <div class="search-bar" id="searchBar">
+        <input type="text" id="searchInput" placeholder="Search movies..." autocomplete="off" />
+        <button class="search-close" id="searchClose">✕</button>
+        <div class="search-results" id="searchResults"></div>
+    </div>
+</div>
+            <div class="get-started">
+                <button class="register-btn" onclick="window.location.href='register.html'">WATCH NOW</button>
+            </div>
+                <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+        </div>
+
+        <div class="main-hero">
+            <div class="login-screen">
+                <div class="container">
+                    <div class="row1">
+
+                        <div class="block">
+                            <img src="./images/spiderman.webp" alt="SpiderMan">
+                            <div class="content-block">
+                                <h2>Spider-Man</h2>
+                                <p class="description">
+                                    Spider-Man is a superhero in American comic books published by Marvel Comics. Created by writer-editor Stan Lee and artist Steve Ditko.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="block">
+                            <img src="./images/silenced.jpg" alt="Silenced">
+                            <div class="content-block">
+                                <h2>Silenced</h2>
+                                <p class="description">
+                                    A deeply religious man, held in great esteem by society, watches his prestige crumble to dust when the new teacher becomes the voice of his sexually abused students who are hearing impaired.
+                                </p>
+                            </div>
+                        </div> 
+
+                        <div class="block">
+                            <img src="./images/sevenn.jpg" alt="Seven">
+                            <div class="content-block">
+                                <h2>Seven</h2>
+                                <p class="description">
+                                    Detectives Somerset and Mills, one a seasoned cop, the other a relatively new one, are paired up to solve murders. Together they attempt to find a killer who is inspired by the seven deadly sins.
+                                </p>
+                            </div>
+                        </div> 
+
+                        <div class="block">
+                            <img src="./images/shawshank.jpg" alt="The Shawshank Redemption">
+                            <div class="content-block">
+                                <h2>The Shawshank Redemption</h2>
+                                <p class="description">
+                                    Andy Dufresne, a successful banker, is arrested for the murders of his wife and her lover, and is sentenced to life.
+                                </p>
+                            </div>
+                        </div> 
+
+                    </div>
+                </div>
+            </div> 
+        </div> 
+
+    </div> 
+</div> 
+
+<section class="new-movie-section">
+  <div class="movie-card">
+    <div class="movie-poster">
+      <img src="images/scream.webp" alt="Movie Poster" />
+    </div>
+
+    <div class="movie-info">
+      <span class="movie-label">New Movie</span>
+      <h2 class="movie-title">Scream 7</h2>
+      <div class="movie-meta">
+        <span>2h 15m</span>
+        <span>Action / Horror</span>
+      </div>
+      <p class="movie-description">
+        When a new Ghostface killer emerges in the town where Sidney Prescott has built a new life, her darkest fears are realized as her daughter becomes the next target.
+      </p>
+    </div>
+  </div>
+</section>
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+    <ul>
+        <li><a href="index.html"   onclick="closeMenu()">HOME</a></li>
+        <li><a href="movies.html"  onclick="closeMenu()">MOVIES</a></li>
+        <li><a href="tvshows.html" onclick="closeMenu()">TV SHOWS</a></li>
+        <li><a href="cartoons.html" onclick="closeMenu()">CARTOON</a></li>
+        <li><a href="anime.html"   onclick="closeMenu()">ANIME</a></li>
+    </ul>
+    <button class="mobile-watch-btn" onclick="window.location.href='register.html'">▶ WATCH NOW</button>
+</nav>
+<footer>
+    <div class="footer-container">
+        <div class="footer-brand">
+            <h2>🎬 KINOFLIX</h2>
+            <p>Your ultimate movie destination</p>
+        </div>
+        <div class="footer-links">
+            <h4>Browse</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Top Rated</a></li>
+            </ul>
+        </div>
+        <div class="footer-links">
+            <h4>Genres</h4>
+            <ul>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Drama</a></li>
+                <li><a href="#">Comedy</a></li>
+                <li><a href="#">Thriller</a></li>
+            </ul>
+        </div>
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2024 KINOFLIX. All rights reserved.</p>
+    </div>
+</footer>
+<script src="js/index.js" defer></script>
+
+</body>
+</html>

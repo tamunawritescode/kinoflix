@@ -1,0 +1,122 @@
+<!-- register.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lato:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="main">
+    <div class="navbar">
+        <div class="menu">
+            <div class="logo" onclick="window.location.href='index.html'">KINO<div class="logo-w">FLIX</div></div>
+
+            <ul class="navbar-items">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="movies.html">MOVIES</a></li>
+                <li><a href="tvshows.html">TV SHOWS</a></li>
+                <li><a href="cartoons.html">CARTOON</a></li>
+                <li><a href="anime.html">ANIME</a></li>
+            </ul>
+
+            <div class="get-started">
+                <button class="register-btn" onclick="window.location.href='register.html'">WATCH NOW</button>
+            </div>
+                <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+        </div>
+<div class="register-page">
+    <div class="reg-card">
+        <p class="reg-title">Join <span>Kinoflix</span></p>
+        <p class="reg-subtitle">Create your free account</p>
+
+        <div class="form-group">
+            <label>Full name</label>
+            <input type="text" placeholder="Tamuna" />
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" placeholder="Tamuna@example.com" />
+        </div>
+
+        <div class="form-group">
+            <label>Phone number</label>
+            <input type="tel" placeholder="+995 234 567 8900" />
+        </div>
+
+        <div class="form-group">
+            <label>Password</label>
+            <input type="password" placeholder="••••••••" />
+        </div>
+
+        <div class="reg-divider"></div>
+
+        <button class="reg-btn" id="registerbtn">Create Account</button>
+
+        <p class="reg-login">Already have an account? <a href="login.html">Sign in</a></p>
+    </div>
+</div>
+    </div></div>   
+     <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+    <ul>
+        <li><a href="index.html"   onclick="closeMenu()">HOME</a></li>
+        <li><a href="movies.html"  onclick="closeMenu()">MOVIES</a></li>
+        <li><a href="tvshows.html" onclick="closeMenu()">TV SHOWS</a></li>
+        <li><a href="cartoons.html" onclick="closeMenu()">CARTOON</a></li>
+        <li><a href="anime.html"   onclick="closeMenu()">ANIME</a></li>
+    </ul>
+    <button class="mobile-watch-btn" onclick="window.location.href='register.html'">▶ WATCH NOW</button>
+</nav>
+<footer>
+    <div class="footer-container">
+        <div class="footer-brand">
+            <h2>🎬 KINOFLIX</h2>
+            <p>Your ultimate movie destination</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Browse</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Top Rated</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <h4>Genres</h4>
+            <ul>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Drama</a></li>
+                <li><a href="#">Comedy</a></li>
+                <li><a href="#">Thriller</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>© 2024 KINOFLIX. All rights reserved.</p>
+    </div>
+</footer> 
+<script src="js/index.js" defer></script>
+
+</body>
+</html>

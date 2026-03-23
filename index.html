@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KINOFLIX</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="main">
+    <div class="navbar">
+        <div class="menu">
+            <div class="logo" onclick="window.location.href='index.html'">KINO<div class="logo-w">FLIX</div></div>
+
+            <ul class="navbar-items">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="movies.html">MOVIES</a></li>
+                <li><a href="tvshows.html">TV SHOWS</a></li>
+                <li><a href="cartoons.html">CARTOON</a></li>
+                <li><a href="anime.html">ANIME</a></li>
+            </ul>
+<div class="search-wrapper" id="searchWrapper">
+    <button class="search-icon-btn" id="searchToggle" aria-label="Search">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/>
+        </svg>
+    </button>
+    <div class="search-bar" id="searchBar">
+        <input type="text" id="searchInput" placeholder="Search movies..." autocomplete="off" />
+        <button class="search-close" id="searchClose">✕</button>
+        <div class="search-results" id="searchResults"></div>
+    </div>
+</div>
+            <div class="get-started">
+                <button class="register-btn" onclick="window.location.href='register.html'">WATCH NOW</button>
+            </div>
+                <button class="hamburger" id="hamburgerBtn" aria-label="Open menu" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+        </div> <!-- /.menu -->
+
+        <div class="main-hero">
+            <div class="login-screen">
+                <div class="container">
+                    <div class="row1">
+
+                        <div class="block">
+                            <img src="./images/breaking bad.webp" alt="Breaking Bad Poster">
+                            <div class="content-block">
+                                <h2>Breaking Bad</h2>
+                                <p class="description">
+                                    A high school chemistry teacher dying of cancer teams with a former student
+                                    to secure his family's future by manufacturing and selling crystal meth.
+                                </p>
+                            </div>
+                        </div> <!-- /.block -->
+
+                        <div class="block">
+                            <img src="./images/big bang b.jpg" alt="big bang theory">
+                            <div class="content-block">
+                                <h2>The Big Bang Theory</h2>
+                                <p class="description">
+                                    Physicists Leonard and Sheldon find their social dynamics shifting when Penny, an aspiring actress, moves into the apartment across the hall.
+                                </p>
+                            </div>
+                        </div> <!-- /.block -->
+
+                        <div class="block">
+                            <img src="./images/Christian_Bale_as_The_Dark_Knight.webp" alt="batman">
+                            <div class="content-block">
+                                <h2>The Batman</h2>
+                                <p class="description">
+                                    Batman is a superhero who appears in American comic books published by DC Comics. Batman was created by writer Bill Finger and artist Bob Kane, and debuted in the 27th issue of the comic book Detective Comics on March 30, 1939.
+                                </p>
+                            </div>
+                        </div> <!-- /.block -->
+
+                        <div class="block">
+                            <img src="./images/schindlerlist.jpg" alt="schindler list">
+                            <div class="content-block">
+                                <h2>Schindler's List</h2>
+                                <p class="description">
+                                    Oscar Schindler, a successful and narcissistic German businessman, slowly starts worrying about the safety of his Jewish workforce after witnessing their persecution in Poland during World War II.
+                                </p>
+                            </div>
+                        </div> <!-- /.block -->
+
+                    </div> <!-- /.row1 -->
+                </div> <!-- /.container -->
+            </div> <!-- /.login-screen -->
+        </div> <!-- /.main-hero -->
+
+    </div> <!-- /.navbar -->
+    <section class="popular-movies">
+        <div class="container nopad">
+            <div class="section-header">
+                <h2>Most</h2>
+                <h3>Popular</h3>
+                <h4>Movies</h4>
+            </div>
+
+            <div class="movie-grid">
+                <div class="movie-card" style="--poster: url('../images/interstellar.jpg');">
+                    <div class="poster-wrapper">
+                        <div class="rating">8.4</div>
+                        <div class="overlay">
+                            <button class="play-btn">▶ Watch Now</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>Interstellar</h3>
+                        <p>Sci-Fi • 2014</p>
+                    </div>
+                </div> <!-- /.movie-card -->
+
+                <div class="movie-card" style="--poster: url('../images/soprano.jpg');">
+                    <div class="poster-wrapper">
+                        <div class="rating">9.0</div>
+                        <div class="overlay">
+                            <button class="play-btn">▶ Watch Now</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>The Dark Knight</h3>
+                        <p>Action • 2008</p>
+                    </div>
+                </div> <!-- /.movie-card -->
+                <div class="movie-card" style="--poster: url('../images/house.jpg');">
+                    <div class="poster-wrapper">
+                        <div class="rating">9.0</div>
+                        <div class="overlay">
+                            <button class="play-btn">▶ Watch Now</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>The Dark Knight</h3>
+                        <p>Action • 2008</p>
+                    </div>
+                </div> <!-- /.movie-card -->
+                <div class="movie-card" style="--poster: url('../images/Christian_Bale_as_The_Dark_Knight.webp');">
+                    <div class="poster-wrapper">
+                        <div class="rating">9.0</div>
+                        <div class="overlay">
+                            <button class="play-btn">▶ Watch Now</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>The Dark Knight</h3>
+                        <p>Action • 2008</p>
+                    </div>
+                </div> <!-- /.movie-card -->
+            </div><!-- /.movie-grid -->
+    </div> 
+</section>
+</div> <!-- /.main -->
+
+
+<nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+    <ul>
+        <li><a href="index.html"   onclick="closeMenu()">HOME</a></li>
+        <li><a href="movies.html"  onclick="closeMenu()">MOVIES</a></li>
+        <li><a href="tvshows.html" onclick="closeMenu()">TV SHOWS</a></li>
+        <li><a href="cartoons.html" onclick="closeMenu()">CARTOON</a></li>
+        <li><a href="anime.html"   onclick="closeMenu()">ANIME</a></li>
+    </ul>
+    <button class="mobile-watch-btn" onclick="window.location.href='register.html'">▶ WATCH NOW</button>
+</nav>
+ 
+<footer>
+    <div class="footer-container">
+        <div class="footer-brand">
+            <h2>🎬 KINOFLIX</h2>
+            <p>Your ultimate movie destination</p>
+        </div>
+
+        <div class="footer-links">
+            <h4>Browse</h4>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Top Rated</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-links">
+            <h4>Genres</h4>
+            <ul>
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Drama</a></li>
+                <li><a href="#">Comedy</a></li>
+                <li><a href="#">Thriller</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-social">
+            <h4>Follow Us</h4>
+            <div class="social-icons">
+                <a href="#">Twitter</a>
+                <a href="#">Instagram</a>
+                <a href="#">YouTube</a>
+            </div>
+        </div>
+    </div> <!-- /.footer-container -->
+
+    <div class="footer-bottom">
+        <p>© 2024 KINOFLIX. All rights reserved.</p>
+    </div>
+</footer>
+<script src="js/index.js" defer></script>
+</body>
+</html>
