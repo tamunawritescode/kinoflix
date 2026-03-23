@@ -950,7 +950,6 @@ footer{
     }
 }
 
-/* ── 768px: Tablet Portrait ── */
 @media (max-width: 768px) {
     .footer-container {
         -ms-grid-columns: 1fr 1fr;
@@ -1095,9 +1094,13 @@ footer{
         padding: 12px 32px;
         font-size: 0.95rem;
     }
+    .search-wrapper{
+        right: 60px;
+        top: -2px;
+        position: absolute;
+    }
 }
 
-/* ── 480px: Large Mobile ── */
 @media (max-width: 480px) {
     .footer-container {
         -ms-grid-columns: 1fr;
