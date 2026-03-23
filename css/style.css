@@ -753,6 +753,7 @@ footer{
     -webkit-transition: opacity 0.2s;
     -o-transition: opacity 0.2s;
     transition: opacity 0.2s;
+    margin-top: 15px;
 }
 .search-icon-btn:hover { opacity: 1; }
 .search-bar {

@@ -1,6 +1,16 @@
     const hamburgerBtn = document.getElementById('hamburgerBtn');
     const mobileMenu   = document.getElementById('mobileMenu');
     const registerButton = document.getElementById('registerbtn');
+    const searchBtn = document.getElementById('searchToggle');
+    const searchBar = document.getElementById('searchBar');
+
+    searchBtn.addEventListener('click', () => {
+        if(searchBar.style.display == 'none' || searchBar.style.display == ''){
+            searchBar.style.display = 'block';
+        }else{
+            searchBar.style.display = 'none';
+        } 
+    });
 
     registerButton.addEventListener('click', () => {
         alert("Registration was successful!");
